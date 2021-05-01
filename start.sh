@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # To set a different value other than default(5), remove `#` from below line and replace the value
-#MAX_CONCURRENT_DOWNLOADS=5
+MAX_CONCURRENT_DOWNLOADS=9
 
 if [[ -n $MAX_CONCURRENT_DOWNLOADS ]]; then
 	sed -i'' -e "/max-concurrent-downloads/d" $(pwd)/aria.conf
